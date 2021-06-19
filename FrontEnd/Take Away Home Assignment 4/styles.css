@@ -1,0 +1,251 @@
+body {
+background-color: #0cbaba;
+background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
+font-family: 'Baloo Tammudu 2', cursive;
+/* margin-top: 50px; */
+}
+
+.clock {
+background-color: #20bf55;
+background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+border: 13px solid rgb(176, 189, 194);
+border-radius: 50%;
+position: relative;
+width: 320px;
+height: 320px;
+margin: auto;
+}
+
+ul {
+list-style: none;
+top: 0;
+margin: 0;
+padding: 0;
+position: absolute;
+/* border: 1px solid red; */
+text-align: center;
+}
+li {
+position: absolute;
+transform-origin: 50% 100%;
+height: 160px;
+}
+
+.hours {
+left: 120px;
+font-size: 23.3px;
+letter-spacing: -1.6px;
+line-height: 45px;
+}
+
+.hours li {
+width: 80px;
+}
+
+.hours span {
+display: block;
+}
+
+/* to rotate list item */
+.hours li:nth-of-type(1) {
+transform: rotate(30deg);
+}
+
+/* to rotate number */
+.hours li:nth-of-type(1) span{
+transform:rotate(-30deg) ;
+
+}
+
+/* to rotate list item */
+.hours li:nth-of-type(2) {
+transform: rotate(60deg);
+}
+
+/* to rotate number */
+.hours li:nth-of-type(2) span{
+transform:rotate(-60deg) ;
+
+}
+
+/* to rotate list item */
+.hours li:nth-of-type(3) {
+transform: rotate(90deg);
+}
+
+/* to rotate number */
+.hours li:nth-of-type(3) span{
+transform:rotate(-90deg) ; */
+
+}
+
+/* to rotate list item */
+.hours li:nth-of-type(4) {
+transform: rotate(120deg);
+}
+
+/* to rotate number */
+.hours li:nth-of-type(4) span{
+transform:rotate(-120deg) ;
+
+}
+
+/* to rotate list item */
+.hours li:nth-of-type(5) {
+transform: rotate(150deg);
+}
+
+/* to rotate number */
+.hours li:nth-of-type(5) span{
+transform:rotate(-150deg) ;
+
+}
+
+/* to rotate list item */
+.hours li:nth-of-type(6) {
+transform: rotate(180deg);
+}
+
+/* to rotate number */
+.hours li:nth-of-type(6) span{
+transform:rotate(-180deg) ;
+
+}
+
+/* to rotate list item */
+.hours li:nth-of-type(7) {
+transform: rotate(210deg);
+}
+
+/* to rotate number */
+.hours li:nth-of-type(7) span{
+transform:rotate(-210deg) ;
+
+}
+
+/* to rotate list item */
+.hours li:nth-of-type(8) {
+transform: rotate(240deg);
+}
+
+/* to rotate number */
+.hours li:nth-of-type(8) span{
+transform:rotate(-240deg) ;
+
+}
+
+/* to rotate list item */
+.hours li:nth-of-type(9) {
+transform: rotate(270deg);
+}
+
+/* to rotate number */
+.hours li:nth-of-type(9) span{
+transform:rotate(-270deg) ;
+
+}
+
+/* to rotate list item */
+.hours li:nth-of-type(10) {
+transform: rotate(300deg);
+}
+
+/* to rotate number */
+.hours li:nth-of-type(10) span{
+transform:rotate(-300deg) ;
+
+}
+
+/* to rotate list item */
+.hours li:nth-of-type(11) {
+transform: rotate(330deg);
+}
+
+/* to rotate number */
+.hours li:nth-of-type(11) span{
+transform:rotate(-330deg) ;
+
+}
+
+.hr-wrapper, .min-wrapper,.sec-wrapper{
+/* border: 2px solid red; */
+position: absolute;
+width:320px;
+height:320px;
+}
+
+.hand{
+position:absolute;
+bottom:50%;
+border: 1px solid blueviolet;
+transform-origin:50% 100%;
+}
+
+.hr{
+background:rgb(147, 43, 231) ;
+left:152px;
+width:13px;
+height:105px;
+border-radius:10px;
+animation: rotateHand 43200s linear infinite;
+}
+
+.hr:after{
+background:#222;
+border-radius: 50%;
+content:"";
+display:block;
+position: absolute;
+bottom:-8px;
+width:13px;
+height:16px;
+}
+
+.min{
+background:rgb(134, 240, 143) ;
+left:155px;
+width:9px;
+height:125px;
+border-radius:8px;
+animation: rotateHand 3600s linear infinite;
+}
+
+
+.min:after{
+background:#222;
+border-radius: 50%;
+content:"";
+display:block;
+position: absolute;
+bottom:-8px;
+width:9px;
+height:16px;
+}
+
+.sec{
+background:rgb(114, 147, 236) ;
+left:156.5px;
+width:5px;
+height:132px;
+border-radius:8px;
+animation: rotateHand 60s linear infinite;
+}
+
+
+.sec:after{
+background:#222;
+border-radius: 50%;
+content:"";
+display:block;
+position: absolute;
+bottom:-3.5px;
+width:5px;
+height:7px;
+}
+
+@keyframes rotateHand{
+to{
+transform: rotate(1turn);
+}
+}

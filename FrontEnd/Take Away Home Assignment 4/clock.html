@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="hands.css" />
+  
+  </head>
+  <body>
+    <div class="clock">
+      <ul class="hours">
+        <li>
+          <span>1</span>
+        </li>
+        <li>
+          <span>2</span>
+        </li>
+        <li>
+          <span>3</span>
+        </li>
+        <li>
+          <span>4</span>
+        </li>
+        <li>
+          <span>5</span>
+        </li>
+        <li>
+          <span>6</span>
+        </li>
+        <li>
+          <span>7</span>
+        </li>
+        <li>
+          <span>8</span>
+        </li>
+        <li>
+          <span>9</span>
+        </li>
+        <li>
+          <span>10</span>
+        </li>
+        <li>
+          <span>11</span>
+        </li>
+        <li>
+          <span>12</span>
+        </li>
+      </ul>
+      <div class="hr-wrapper" style="transform: rotate(199.5deg)">
+        <div class="hand hr"></div>
+      </div>
+      <div class="min-wrapper" style="transform: rotate(239.4deg)">
+        <div class="hand min"></div>
+      </div>
+      <div class="sec-wrapper" style="transform: rotate(324.288deg)">
+        <div class="hand sec"></div>
+      </div>
+    </div>
+    <script>
+      var date = new Date();
+      var hr = date.getHours() > 12 ? date.getHours() - 12 : date.getHours(),
+        min = date.getMinutes(),
+        sec = date.getSeconds(),
+        milsec = date.getMilliseconds();
+
+      //for hands
+      var hrAngle = hr * 30 + min / 2,
+        minAngle = min * 6 + (sec * 6) / 60,
+        secAngle = sec * 6 + (milsec * 0.36) / 1000;
+
+      function setAngle(wrappers, angle) {
+        document.querySelector("." + wrapper).getElementsByClassName.transform =
+          "rotate(" + angle + "deg)";
+      }
+      setAngle("hr-wrapper", hrAngle);
+      setAngle("min-wrapper", minAngle);
+      setAngle("sec-wrapper", secAngle);
+    </script>
+  </body>
+</html>
