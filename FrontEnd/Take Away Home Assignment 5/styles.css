@@ -1,0 +1,25 @@
+.title {
+  margin-bottom: 10px;
+  text-align: center;
+  width: 210px;
+  color: red;
+  border: solid red 2px;
+}
+
+input[type="button"] {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 100%;
+}
+
+input[type="text"] {
+  background-color: white;
+  border: solid red 2px;
+  width: 100%;
+}
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
