@@ -1,0 +1,18 @@
+body {
+  background-color: #f9f9f3;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 20px;
+  font-family: "Lancelot", cursive;
+  background-image: url('./684.jpg') ;
+}
+
+.text {
+  line-height: 70%;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #dcd8a0;
+  text-decoration-thickness: 5px;
+}
