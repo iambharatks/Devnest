@@ -20,6 +20,12 @@ function join(arr) {
   }
   return new_string;
 }
+function accumulator(arr) {
+  const reducFn = a1.reduce((acc, item) => {
+    acc = acc + item;
+    return acc;
+  }, 0);
+}
 function frequency(arr) {
   let map = new Map();
   for (item of arr) {
