@@ -85,7 +85,60 @@ a = 10;
 //* Correct
 ab();
 function ab() {
+    console.log(10);
+}
+//! Error
+ba();
+const ba = () => {
+    console.log(10);
+};
+const ba = () => {
   console.log(10);
+};
+ba();
+var ba2 = function(){
+    console.log(10);
 }
 */
 
+/* 6
+var a = [1, 2, 3, 4];
+var b = a;
+var c = [...a];
+b.push(5);
+c.push(6);
+console.log(a, b, c);
+
+console.log(...a);
+
+const getSum = (a, b) => {
+  console.log(a + b);
+};
+
+const sum = (a, b, ...c) => {
+  const res = c.reduce((acc, item) => {
+    acc += item;
+    return acc;
+  }, a + b);
+  //   console.log(res);
+  return res;
+};
+
+console.log(sum(...a, 6, 7));
+
+*/
+
+/*7
+
+const server1 = {
+  serverName: "Devnest",
+};
+const server2 = {
+  serverName: "TheDevelopersCommunity",
+  serverOrigin: "Neccessity",
+};
+
+console.log({ ...server2 }, { serverName: "Bharat" });
+console.log({ ...server2, serverName: "Bharat", memberCount: 4500 });
+
+ */
