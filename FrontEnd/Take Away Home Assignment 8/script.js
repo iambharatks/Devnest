@@ -76,5 +76,16 @@ const ab = getInvite.bind(server2, 1, 4);
 ab();
 
 getInvite.apply(server2, [1, 5]);
-
 */
+
+/* 5
+//! Error
+console.log(a);
+a = 10;
+//* Correct
+ab();
+function ab() {
+  console.log(10);
+}
+*/
+
